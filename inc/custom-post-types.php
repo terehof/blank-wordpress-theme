@@ -17,6 +17,8 @@ function custom_post_types() {
 			'update_item'           => 'Update',
 			'view_item'             => 'View',
 			'view_items'            => 'View All',
+			'search_items'          => 'Find News',
+			'not_found'             => 'News not found...',
 		),
 		'supports'              => array(
 			'title',
@@ -31,6 +33,7 @@ function custom_post_types() {
 		'menu_icon'             => 'dashicons-format-aside',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
+		'show_in_rest'          => true, // if false - Gutenberg won't work
 		'can_export'            => true,
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
