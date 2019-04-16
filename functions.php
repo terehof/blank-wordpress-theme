@@ -4,7 +4,7 @@
 require get_template_directory() . '/inc/enqueue-scripts-style.php';
 
 /** Custom Post Types **/
-require get_template_directory() . '/inc/custom-post-types.php.php';
+require get_template_directory() . '/inc/custom-post-types.php';
 
 /** AJAX **/
 require get_template_directory() . '/inc/ajax.php';
