@@ -65,7 +65,7 @@ gulp.task('styles', function () {
             host: 'ftp.example.com',
             user: 'dev@example.com',
             pass: 'pink_spoon',
-            remotePath: '/wp-content/themes/theme_name/assets/js'
+            remotePath: '/wp-content/themes/theme_name/assets/css'
         }));
 });
 gulp.task('styles-min', function () {
@@ -82,7 +82,7 @@ gulp.task('styles-min', function () {
             host: 'ftp.example.com',
             user: 'dev@example.com',
             pass: 'pink_spoon',
-            remotePath: '/wp-content/themes/theme_name/assets/js'
+            remotePath: '/wp-content/themes/theme_name/assets/css'
         }));
 });
 
