@@ -3,11 +3,14 @@
 /** Enqueue scripts, styles **/
 require get_template_directory() . '/inc/enqueue-scripts-style.php';
 
+/** Custom Post Types **/
+require get_template_directory() . '/inc/custom-post-types.php.php';
+
 /** AJAX **/
 require get_template_directory() . '/inc/ajax.php';
 
 /** Helpers **/
-require get_template_directory() . '/inc/helpers.php'; /* TODO: remove when development finished */
+require get_template_directory() . '/inc/helpers.php';
 
 /** Hide editor **/
 require get_template_directory() . '/inc/hide-editor.php';
