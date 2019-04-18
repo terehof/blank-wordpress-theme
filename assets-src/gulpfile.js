@@ -9,6 +9,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     cssmin = require('gulp-cssmin'),
     rename = require('gulp-rename'),
+    replace = require('gulp-replace'),
     fileInclude = require('gulp-file-include'),
     ftp = require('gulp-ftp');
 
@@ -60,6 +61,7 @@ gulp.task('styles', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(rename('style.css'))
+        .pipe(replace('../../', '../'))
         .pipe(gulp.dest(path.build.css))
         .pipe(ftp({
             host: 'ftp.example.com',
@@ -77,6 +79,7 @@ gulp.task('styles-min', function () {
         }))
         .pipe(cssmin())
         .pipe(rename('style.css'))
+        .pipe(replace('../../', '../'))
         .pipe(gulp.dest(path.build.css))
         .pipe(ftp({
             host: 'ftp.example.com',
