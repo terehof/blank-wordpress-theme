@@ -46,4 +46,10 @@ add_filter( 'site_transient_update_plugins', 'filter_plugin_updates' );
 remove_action('wp_head', 'wp_generator');
 
 
+/***
+ * Add post thumbnails support
+ ***/
+add_theme_support( 'post-thumbnails' );
+
+
 
